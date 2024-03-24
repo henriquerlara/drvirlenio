@@ -202,6 +202,7 @@ button:hover {
 
 .comentario p {
     margin: 0;
+    text-align: justify;
 }
 
 .autor {
@@ -273,6 +274,14 @@ button:hover {
 @media (max-width: 661px){
     .avaliacao-details{
         text-align: center;
+        margin-left: 0;
+    }
+    .doct img {
+        width: 150px; 
+    }
+    
+    .doct2 img {
+        width: 140px;
     }
 }
 
