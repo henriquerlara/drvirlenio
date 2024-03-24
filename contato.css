@@ -1,0 +1,83 @@
+.corpo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+    background-color: #f0f0f0;
+    padding-bottom: 40px;
+}
+
+.titulo p, .informacoes-adicionais p{
+    line-height: 1.6;
+}
+
+#contato, .informacoes-adicionais {
+    max-width: 500px;
+    margin: 25px;
+}
+
+.titulo, .informacoes-adicionais {
+    text-align: center;
+}
+
+form#meuFormulario, .info {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+form#meuFormulario p {
+    font-size: 0.9em; /* Ajusta o tamanho da fonte para ser ligeiramente menor que o texto padrão do formulário */
+    color: #686868; /* Define uma cor de texto sutil */
+    margin-bottom: 0;
+    transform: translate(3px, -5px);
+    margin-top:0;
+    text-align: left; /* Garante que o texto esteja alinhado à esquerda */
+}
+
+form#meuFormulario input, 
+form#meuFormulario textarea, 
+form#meuFormulario button {
+    width: 100%;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+form#meuFormulario button {
+    background-color: #07b8af;
+    color: white;
+    cursor: pointer;
+}
+
+form#meuFormulario button:hover {
+    background-color: #0b8f8b;
+}
+
+form#meuFormulario input:focus, 
+form#meuFormulario textarea:focus {
+    outline: none;
+    border-color: #0b8f8b;
+}
+
+.informacoes-adicionais ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.informacoes-adicionais ul li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .corpo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

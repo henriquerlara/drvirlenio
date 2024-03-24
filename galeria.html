@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Virlenio de Andrade Lara</title>
+    <link rel="icon" sizes="2x1" href="imgs/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galeria.css">
+
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <h1>Dr. Virlenio de Andrade Lara</h1>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="galeria.html">Galeria de Cirurgias</a></li>
+                </ul>
+            </nav>
+        </header>
+        </div>
+
+        <div class="corpo">
+            <div class="galeria">
+                <h2>Galeria de Cirurgias</h2>
+                <div class="imagens-galeria">
+                    <img src="imgs/im1.jpeg" alt="Descrição da Imagem 1" class="imagem-pequena">
+                    <img src="imgs/im2.jpeg" alt="Descrição da Imagem 2" class="imagem-pequena">
+                    <img src="imgs/im3.jpeg" alt="Descrição da Imagem 3" class="imagem-pequena">
+                    <!-- Adicione mais imagens conforme necessário -->
+                </div>
+            </div>
+            
+            <!-- Modal para visualização da imagem -->
+            <div id="modal-imagem" class="modal">
+                <span class="fechar">&times;</span>
+                <img class="modal-conteudo" id="imagem-ampliada">
+                <div id="descricao-imagem"></div>
+                <!-- Botão Anterior -->
+                <span class="navegar anterior">&lt;</span>
+                <!-- Botão Próximo -->
+                <span class="navegar proximo">&gt;</span>
+            </div>
+            
+        </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contato">
+                <h3>Como nos Encontrar</h3>
+                <ul class="contact-info">
+                    <li><a href="contato.html">Acessar página de contato</a></li>
+                </ul>
+            </div>
+            <div class="redes">    
+                <h3>Redes Sociais</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.instagram.com/drvirlenio/">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="https://www.facebook.com/admiradoresdoutorvirlenio?locale=pt_BR">Facebook Fanpage</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Desenvolvimento por <a href="https://www.linkedin.com/in/henrique-lara-010605280/">Henrique Resende Lara</a>. &copy; 2024 Dr. Virlenio de Andrade Lara. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+
+    <script src="galeria.js"></script>
+</body>
+</html>

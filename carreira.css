@@ -1,0 +1,38 @@
+.corpo{
+    background-color: #f0f0f0;
+    padding: 40px;
+}
+
+.sec{
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.sec p{
+    line-height: 1.6;
+}
+
+.imagens-galeria{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.imagens-galeria img {
+    margin: 8px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.2s;
+    max-height: 150px;
+}
+
+.imagens-galeria img:hover {
+    transform: scale(1.1);
+}
+
+p{
+    text-align: justify;
+}
