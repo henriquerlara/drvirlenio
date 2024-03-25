@@ -1,7 +1,6 @@
 var modal = document.getElementById("modal-imagem");
 var imagens = document.getElementsByClassName("imagem-pequena");
 var modalImg = document.getElementById("imagem-ampliada");
-var descricao = document.getElementById("descricao-imagem");
 var span = document.getElementsByClassName("fechar")[0]; // Botão de fechar
 
 var indiceImagemAtual = 0; // Manterá o controle do índice da imagem atualmente exibida
@@ -9,14 +8,13 @@ var indiceImagemAtual = 0; // Manterá o controle do índice da imagem atualment
 // Configurar imagem modal
 function configurarImagemModal(indice) {
     modalImg.src = imagens[indice].src;
-    descricao.innerHTML = imagens[indice].alt;
     indiceImagemAtual = indice;
 }
 
 // Adicionar evento de clique a cada imagem
 for (let i = 0; i < imagens.length; i++) {
     imagens[i].onclick = function() {
-        modal.style.display = "block";
+        modal.style.display = "flex";
         configurarImagemModal(i);
     }
 }

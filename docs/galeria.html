@@ -8,17 +8,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="galeria.css">
-
+    <script src="style.js"></script>
 </head>
 <body>
     <div class="header-container">
         <header>
+            <div class="div-menu">
             <h1>Dr. Virlenio de Andrade Lara</h1>
-            <nav class="nav-links">
+            <div id="icon" class="menu-icon" onclick="toggleMenu()">☰</div>
+            </div>
+    
+            <nav class="nav-links" id="nav-links">
                 <ul>
+                    <li><a href="carreira.html">Carreira</a></li>
                     <li><a href="index.html">Sobre</a></li>
                     <li><a href="contato.html">Contato</a></li>
-                    <li><a href="galeria.html">Galeria de Cirurgias</a></li>
+                    <li><a href="galeria.html"><strong>Galeria de Cirurgias</strong></a></li>
                 </ul>
             </nav>
         </header>
@@ -39,7 +44,6 @@
             <div id="modal-imagem" class="modal">
                 <span class="fechar">&times;</span>
                 <img class="modal-conteudo" id="imagem-ampliada">
-                <div id="descricao-imagem"></div>
                 <!-- Botão Anterior -->
                 <span class="navegar anterior">&lt;</span>
                 <!-- Botão Próximo -->

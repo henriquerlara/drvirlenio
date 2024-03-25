@@ -5,6 +5,18 @@ body {
     background-color: #f9f9f9;
 }
 
+.div-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 .header-container {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adiciona sombra na parte inferior */
     position: relative; /* Assegura que a sombra seja corretamente posicionada */
@@ -108,3 +120,16 @@ footer {
     color: #007bff;
 }
 
+@media (max-width: 560px){
+    header nav ul li {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-links{
+        margin-top: -18px;
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+}

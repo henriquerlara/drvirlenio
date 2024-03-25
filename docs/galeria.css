@@ -9,11 +9,15 @@
 }
 
 .imagens-galeria{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 30px;
 }
 
 .imagens-galeria img {
-    width: 250px; /* Ajuste conforme necessário */
+    max-height: 300px;
+    max-width: auto;
     margin: 10px;
     border: 2px solid #ccc;
     cursor: pointer;
@@ -45,9 +49,8 @@
 .modal-conteudo {
     margin: auto;
     display: block;
-    width: 80%;
+    width: auto;
     height: 100%;
-    max-width: 700px;
 }
 
 .fechar {
@@ -86,10 +89,29 @@
 }
 
 .proximo {
-    right: 0;
+    right: 20px;
     border-radius: 0 3px 3px 0;
 }
 
 .navegar:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 600px){
+    .modal-conteudo {
+        width: 100%;
+        height: auto;
+    }
+    .modal{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .anterior {
+        left: 0;
+    }
+    
+    .proximo {
+        right: 0;
+    }
 }

@@ -6,11 +6,31 @@
 .sec{
     max-width: 1000px;
     margin: 0 auto;
-
 }
 
 .sec p{
     line-height: 1.6;
+}
+
+.imagens-galeria1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.imagens-galeria1 img {
+    margin: 8px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.2s;
+    max-height: 180px;
+    max-width: 260px;
+}
+
+.imagens-galeria1 img:hover {
+    transform: scale(1.1);
 }
 
 .imagens-galeria{
@@ -27,6 +47,7 @@
     cursor: pointer;
     transition: transform 0.2s;
     max-height: 150px;
+    max-width: 162px;
 }
 
 .imagens-galeria img:hover {
