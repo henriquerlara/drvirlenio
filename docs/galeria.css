@@ -12,11 +12,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 30px;
+    padding-top: 20px;
 }
 
 .imagens-galeria img {
-    max-height: 300px;
+    max-height: 350px;
     max-width: auto;
     margin: 10px;
     border: 2px solid #ccc;

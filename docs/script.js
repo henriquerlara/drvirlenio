@@ -136,7 +136,7 @@ var mymap = L.map('mapid').setView([-19.789097772703872, -42.14306289112699], 80
             const paragraphs = avaliacaoDetails.querySelectorAll('p:not(.nota-maxima), .nota-maxima'); // Seleciona os <p> dentro de .avaliacao-details
             const stars = avaliacaoDetails.querySelectorAll('.rating-stars');
 
-            if (window.innerWidth <= 600) {
+            if (window.innerWidth <= 615) {
                 // Move o .doct ou .doct2 para ser o primeiro elemento da .avaliacao-details
                 avaliacaoDetails.insertBefore(doct, avaliacaoDetails.firstChild);
                 // Move os <p> para seguir o .doct ou .doct2

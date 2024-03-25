@@ -253,7 +253,21 @@ button:hover {
     }
 }
 
+@media (max-width: 661px){
+    .doct img {
+        width: 150px; 
+    }
+    
+    .doct2 img {
+        width: 140px;
+    }
+}
+
 @media (max-width: 615px){
+    .avaliacao-details{
+        text-align: center;
+        margin-left: 0;
+    }
     .nota-maxima {
         font-size: 30px;
     }
@@ -268,20 +282,6 @@ button:hover {
     
     .doct2 img {
         width: 160px;
-    }
-}
-
-@media (max-width: 661px){
-    .avaliacao-details{
-        text-align: center;
-        margin-left: 0;
-    }
-    .doct img {
-        width: 150px; 
-    }
-    
-    .doct2 img {
-        width: 140px;
         margin:0;
     }
 }
