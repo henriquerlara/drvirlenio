@@ -1,11 +1,13 @@
 .corpo{
     background-color: #f0f0f0;
-    padding: 40px;
 }
 
 .sec{
     max-width: 1000px;
     margin: 0 auto;
+    border-top: 1px solid #ccc;
+    padding: 40px;
+    margin-bottom: 20px;
 }
 
 .sec p{
@@ -54,7 +56,7 @@
     transform: scale(1.1);
 }
 
-p{
+section p{
     text-align: justify;
 }
 
