@@ -9,6 +9,7 @@ var indiceImagemAtual = 0; // Manterá o controle do índice da imagem atualment
 function configurarImagemModal(indice) {
     modalImg.src = imagens[indice].src;
     indiceImagemAtual = indice;
+    console.log({indice})
 }
 
 // Adicionar evento de clique a cada imagem
@@ -28,10 +29,11 @@ function mudarImagem(direcao) {
     else if(novoIndice == imagens.length){
         configurarImagemModal(0);
     }
-    else if(novoIndice < imagens.length){
+    else if(novoIndice < 0){
         configurarImagemModal(imagens.length - 1);
     }
 }
+
 
 // Event listeners para os botões de navegar
 document.querySelector('.anterior').addEventListener('click', function() {
